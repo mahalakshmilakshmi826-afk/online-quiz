@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Quiz Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+
+        <!-- Start Screen -->
+        <div id="start-screen">
+            <h1>Online Quiz</h1>
+
+            <p>Test your Computer Science knowledge!</p>
+
+            <input type="text" id="username" placeholder="Enter your name">
+
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen">
+
+            <div class="quiz-top">
+                <span id="question-number">Question 1 / 10</span>
+                <span id="timer">Time: 60</span>
+            </div>
+
+            <h2 id="question">Question goes here</h2>
+
+            <div id="options"></div>
+
+            <button id="next-btn" onclick="nextQuestion()">
+                Next
+            </button>
+
+        </div>
+
+
+        <!-- Result Screen -->
+        <div id="result-screen">
+
+            <h1>Quiz Completed!</h1>
+
+            <p id="result-name"></p>
+
+            <h2 id="score"></h2>
+
+            <p id="percentage"></p>
+
+            <button onclick="restartQuiz()">
+                Restart Quiz
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
